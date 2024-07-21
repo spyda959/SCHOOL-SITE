@@ -1,0 +1,394 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+  
+
+}
+
+body, html{
+    font-family: Roboto, sans-serif, arial;
+    background: #f0f3fa;
+}
+.width-100{
+    width: 100%;
+    float: left
+}
+.container{
+    width: 1400px;
+    margin: 0px auto;
+}
+.top-header{
+    border-bottom: 1px solid #3131315e;
+    background: limegreen;
+    padding: 5px 0px;
+   
+
+}
+.news-list{
+    color: red;
+    background: #fff;
+    padding: 6px;
+    font-size: 20px;
+    
+    
+}
+.headquote{
+    font-size: 30px;
+    color: #fff;
+    width: 80%;
+
+}
+.header-menu{
+    box-shadow: 0px 2px 5px 0px #00000036;
+    position: relative;
+}
+.logo{
+     width: fit-content;
+     float: left;
+}
+.main-menu a:hover{
+    color: limegreen;
+
+}
+.main-menu{
+    list-style: none;
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    
+}
+.main-menu a{
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    
+    
+}
+.main-menu li{
+    float: left;
+    padding: 12px 15px;
+    
+}
+.slider-width{
+    width: 100%;
+    height: 350px;
+}
+.margin-top-50{
+margin-top: 50px;
+}
+.width-33{
+    width: 33%;
+    float:left;
+}
+.latest-news{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 30px;
+    
+}
+.heading-sect{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+    border: 1px solid #cfcfcf;
+    padding-top: 15px;
+    padding-left: 15px;
+    background: limegreen;
+    color: white;
+}
+.head-title{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.latest-news-ul{
+    line-height: 40px;
+    padding: 0px;
+    list-style: none; 
+    height: 250px; 
+}
+.event-list{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.upcoming-event-list{
+    padding: 0px;
+    list-style: none;
+}
+.upcoming-event-list li{
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+.event-date{
+    background: limegreen;
+    width: 50px;
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+}
+.notice-board{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.notice-board-list{
+    line-height: 40px;
+    padding: 0px;
+    list-style:none;
+}
+.notice-board-list li{
+    width: 100%;
+    float: left;
+    margin-bottom: 15px
+}
+.our-principal{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 30px;
+
+}
+.useful-info-ul{
+    list-style: none;
+}
+.useful-info-ul li{
+    margin-bottom: 1px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 15px
+}
+.useful-info-ul a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.sch-sec-style{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 30px;
+}
+.director-name{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    padding-left: 10px;
+    margin-top: 20px;
+
+    
+}
+.director-designation{
+    font-size: 14px;
+    color: black;
+    padding-left: 10px;
+    margin-top: 6px;
+   
+}
+.director-img{
+    width: 100%;
+    height: 100px;
+    
+}
+.width-40{
+    width: 40%;
+    float: left;
+}
+.width-60{
+    width: 60%;
+    float: left;
+}
+.about-us{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 30px;
+    
+}
+.certificate{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 30px;
+
+}
+
+.certificate img{
+    height: 265px;
+}
+.gallery-head-style{
+    font-size: 28px;
+    color: #4b4848;
+    margin-bottom: 5px;
+    background: white;
+    padding: 2px 0px;
+    margin-right: 10px;
+    
+}
+.width-25{
+    width: 25%;
+    float: left;
+}
+.gallery-img{
+    height: 250px;
+    width: 340px;
+
+}
+.benefits-head-style{
+    color: #4b4848;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.benefits-marquee{
+    height: 135px;
+}
+.benefits-marquee img{
+    height: 100px;
+    width: 140px;
+}
+.footer{
+    background: #232f3e;
+    padding: 50px 0px;
+    margin-top: 1px;
+}
+.quicklink-heading{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.quicklink-menu{
+list-style: none;
+padding: 10px;
+}
+.quicklink-menu li a{
+    color: #fff;
+    line-height: 2.5;
+    text-decoration: none;
+    font-size: 15px;
+}
+.get-in-touch{
+list-style-type:none;
+padding: 10px;
+}
+.get-in-touch li i{
+    color: limegreen;
+    font-size: 20px
+}
+.get-in-touch li{
+    color: #fff;
+    font-size: 15px;
+    line-height: 2.5;
+    text-decoration: none;
+}
+.footer-email{
+    font-size: 15px;
+    color: lime;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footer2-bacor{
+    background: #232f3e;
+    padding: 10px;
+    border-top: 1px solid #898989;
+}
+.footer2-content{
+    font-size: 14px;
+    color: #fff;
+    text-align: center
+}
+
+
+
+/* ABOUT-US*/
+
+header {
+    background: limegreen;
+    
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+section {
+    background: #fff;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    margin: 1rem 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/*  SECTION IN ABOUT-US  */
+section {
+    background: #fff;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
