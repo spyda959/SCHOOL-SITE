@@ -1,45 +1,52 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-   
-  
-
 }
 
-body, html{
-    font-family: Roboto, sans-serif, arial;
+body, html {
+    font-family: 'Roboto', 'Arial', sans-serif;
     background: #f0f3fa;
 }
-.width-100{
-    width: 100%;
-    float: left
+html{
+    scroll-behavior: smooth;
 }
-.container{
-    width: 1400px;
-    margin: 0px auto;
-}
-.top-header{
-    border-bottom: 1px solid #3131315e;
-    background: limegreen;
-    padding: 5px 0px;
-   
+/*--------------top header start-----------*/
 
+.width-100 {
+    width: 100%;
+    float: left;
 }
-.news-list{
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px; /* Adds some padding for smaller screens */
+}
+
+.top-header {
+    border-bottom: 1px solid rgba(49, 49, 49, 0.37); /* Use rgba for more precise control */
+    background: limegreen;
+    padding: 8px 0;
+}
+
+.news-list {
     color: red;
     background: #fff;
     padding: 6px;
-    font-size: 20px;
-    
-    
+    font-size: 1.25rem; /* Use rem for font size */
 }
-.headquote{
-    font-size: 30px;
+
+.headquote {
+    font-size: 1.25rem; /* Use rem for font size */
     color: #fff;
     width: 80%;
-
+    max-width: 100%; /* Ensure it does not overflow on smaller screens */
 }
+/*--------------top header ends-----------*/
+
+/*-----------------------header menu start --------------------*/
 .header-menu{
     box-shadow: 0px 2px 5px 0px #00000036;
     position: relative;
@@ -48,18 +55,18 @@ body, html{
      width: fit-content;
      float: left;
 }
-.main-menu a:hover{
+#main-menu a:hover{
     color: limegreen;
+    transition: 0.5s;
 
 }
-.main-menu{
+#main-menu{
     list-style: none;
     float: right;
     margin-top: 20px;
     margin-right: 15px;
-    
 }
-.main-menu a{
+#main-menu a{
     color: #3a3a3a;
     font-weight: 500;
     font-size: 20px;
@@ -67,17 +74,23 @@ body, html{
     
     
 }
-.main-menu li{
+#main-menu li{
     float: left;
     padding: 12px 15px;
     
 }
+/*------------header menu ends --------------------*/
+
+/*------------banner start-----------------------*/
 .slider-width{
     width: 100%;
     height: 350px;
 }
+/*-----------banner ends-------------------------*/
+
+/*----------latest news start------*/
 .margin-top-50{
-margin-top: 50px;
+    margin-top: 50px;
 }
 .width-33{
     width: 33%;
@@ -118,6 +131,9 @@ margin-top: 50px;
     list-style: none; 
     height: 250px; 
 }
+/*-------------------- latest news end -----------------*/
+
+/*--------------------upcoming event start-------------*/
 .event-list{
     margin-left: 10px;
     margin-right: 10px;
@@ -145,6 +161,9 @@ margin-top: 50px;
     padding: 10px;
     margin-right: 10px;
 }
+/*------------------upcoming event ends-------------------*/
+
+/*-----------------notice board start---------------------*/
 .notice-board{
     margin-left: 10px;
     margin-right: 10px;
@@ -157,12 +176,16 @@ margin-top: 50px;
     line-height: 40px;
     padding: 0px;
     list-style:none;
+   
 }
 .notice-board-list li{
     width: 100%;
     float: left;
-    margin-bottom: 15px
+    margin-bottom: 5px;
 }
+/*-----------------notice board ends----------------------*/
+
+/*----------------Forms-Policy-Code&Ethics start ------------*/
 .our-principal{
     margin-left: 10px;
     margin-right: 10px;
@@ -185,6 +208,9 @@ margin-top: 50px;
     color: black;
     text-decoration: none;
 }
+/*----------------Forms-Policy-Code&Ethics ends ------------*/
+
+/*----------------Our teachers start------------------------*/
 .sch-sec-style{
     margin-bottom: 30px;
     border-bottom: 1px solid #d7d7d7;
@@ -228,6 +254,9 @@ margin-top: 50px;
     margin-bottom: 30px;
     
 }
+/*----------------Our teachers ends------------------------*/
+
+/*----------------Certificate start------------------------*/
 .certificate{
     margin-left: 10px;
     margin-right: 10px;
@@ -241,8 +270,11 @@ margin-top: 50px;
 .certificate img{
     height: 265px;
 }
+/*----------------Certificate ends------------------------*/
+
+/*----------------Gallery Start------------------------*/
 .gallery-head-style{
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #4b4848;
     margin-bottom: 5px;
     background: white;
@@ -259,6 +291,9 @@ margin-top: 50px;
     width: 340px;
 
 }
+/*----------------Gallery ends------------------------*/
+
+/*----------------Siblings benefits start------------------------*/
 .benefits-head-style{
     color: #4b4848;
     font-size: 28px;
@@ -271,46 +306,153 @@ margin-top: 50px;
     height: 100px;
     width: 140px;
 }
-.footer{
-    background: #232f3e;
-    padding: 50px 0px;
-    margin-top: 1px;
-}
-.quicklink-heading{
-    font-size: 18px;
-    font-weight: bold;
+/*----------------Siblings benefits ends------------------------*/
+
+/*----------------leave us a message start------------------------*/
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid limegreen;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
     color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:limegreen;
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.contact .row{
+    display:inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.quicklink-heading{
+    font-size: 30px;
+    font-weight: bold;
     margin-bottom: 10px;
+    color: #fff;
 }
 .quicklink-menu{
 list-style: none;
 padding: 10px;
 }
 .quicklink-menu li a{
-    color: #fff;
     line-height: 2.5;
     text-decoration: none;
-    font-size: 15px;
+    color: #fff;
+    
 }
-.get-in-touch{
-list-style-type:none;
-padding: 10px;
+
+.footer{
+    background: #03182e;
+    padding: 50px 0px;
+    margin-top: 1px;
 }
-.get-in-touch li i{
+#contact-left{
+    flex-basis: 35%;
+    color: #fff;
+}
+.contact-right{
+    flex-basis: 35%;
+    color: #fff;
+}
+.contact-right-right{
+    flex-basis: 25%;
+    
+}
+#contact-left p{
+    margin-top: 30px;
+
+}
+
+#contact-left p i{
+    color:limegreen;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures equal height for all columns */
+}
+
+.footer .width-25, .footer .contact-left, .footer .contact-right {
+    flex: 1; /* Each column takes up equal space */
+    margin: 10px; /* Space between columns */
+    display: flex;
+    flex-direction: column; /* Align content vertically within each column */
+}
+
+.footer .contact-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure form fills the height of the column */
+}
+
+/* Optional: Additional styling to ensure consistency */
+.footer .contact-left, .footer .contact-right {
+    padding: 10px;
+}
+
+/* Ensure form elements span full width */
+.footer .contact-right input, 
+.footer .contact-right textarea, 
+.footer .contact-right button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
     color: limegreen;
-    font-size: 20px
+    transform: translateY(-5px);
 }
-.get-in-touch li{
+.btn.btn2{
+    display: inline-block;
+    background: limegreen;
+}
+
+.contact-right form{
+    width: 100%;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:black;
+    padding: 15px;
+    margin: 15px 0;
     color: #fff;
-    font-size: 15px;
-    line-height: 2.5;
-    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
 }
-.footer-email{
-    font-size: 15px;
-    color: lime;
-    font-weight: bold;
-    text-decoration: none;
+form .btn2{
+    margin-top: 20px;
+    padding: 14px 60px;
+    font-size: 18px;
+    cursor: pointer;
 }
 .footer2-bacor{
     background: #232f3e;
@@ -322,73 +464,389 @@ padding: 10px;
     color: #fff;
     text-align: center
 }
+nav .fas{
+    display: none;
+}
+#msg{
+    display: block;
+    color: #ff004f;
+    margin-top: -10px;
+}
+/*----------------leave us a message ends------------------------*/
 
 
 
-/* ABOUT-US*/
 
-header {
-    background: limegreen;
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width for tablet and smaller devices */
+    }
     
-    padding: 1rem 0;
-    text-align: center;
+    .news-list, .headquote {
+        font-size: 1rem; /* Reduce font size for smaller screens */
+        margin-top: 10px;
+    }
+
+    .headquote {
+        width: 100%;
+        font-weight: bolder;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: rgb(233, 241, 233);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 10px;
+        z-index: 2;
+        transition: right 0.5s;
+        
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        height: 50px;
+        
+       
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
+@media (max-width: 480px) {
+    .top-header {
+        padding: 12px 0; /* Increase padding for touch targets */
+        padding: 1px 0px;
 
-section {
-    background: #fff;
-    margin: 1rem 2rem;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+    }
 
-section h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-section p, section ul {
-    margin: 1rem 0;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
+    .news-list {
+        font-size: 0.9rem; /* Further reduce font size for mobile devices */
+    }
+   
 }
 
 @media (max-width: 768px) {
-    section {
-        margin: 1rem;
-        padding: 1rem;
+    .width-33 {
+        width: 100%;
+        float: none;
     }
-    
-    header h1 {
-        font-size: 2rem;
+
+    .latest-news {
+        margin: 15px 0;
+        padding: 15px;
+        height: auto; /* Let the content determine height */
+    }
+
+    .heading-sect {
+        padding: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .head-title {
+        font-size: 14px;
+    }
+
+    .latest-news-ul {
+        line-height: 30px;
+        height: auto; /* Let the content determine height */
+    }
+    .notice-board-list li {
+        margin-bottom: -22px;
+    }
+    .useful-info-ul li{
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+    nav .fas.fa-bars{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 30px;
+        font-size: 30px;
+    }
+    .contact-right form h1{
+        font-size: 18px;
+    }
+    nav .fas.fa-times:hover{
+        color: limegreen;
+    }
+    #contact-left p{
+        font-size: 15px;
+    }
+
+}
+
+/* Styles for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .gallery-head-style {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        margin-right: 5px;
+    }
+
+    .width-25 {
+        width: 50%; /* Make items take up more space */
+        float: none; /* Stack items vertically */
+    }
+
+    .gallery-img {
+        width: 100%; /* Images will fill the container width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
+/* Styles for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    .gallery-head-style {
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
 
-/*  SECTION IN ABOUT-US  */
+    .width-25 {
+        width: 100%; /* Full width for mobile */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer .width-25, .footer .contact-left, .footer .contact-right {
+        margin: 10px 0; /* Remove side margins on mobile for better spacing */
+        flex: none; /* Ensure they take up full width */
+    }
+    .notice-board-list li{
+        width: 100%;
+        float: left;
+        margin-bottom: -1px;
+        
+    }
+    .notice-board{
+        margin-left: 10px;
+        margin-right: 10px;
+        background: #fff;
+        padding: 20px;
+        height: 430px;
+        margin-bottom: 30px;
+    }
+}
+
+/*--------scrollAll start------------------------*/
+
+
+
+.background-container {
+    background-image: url('path-to-your-image.jpg');
+    background-size: 50% auto;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.content-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Light background overlay for text readability */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slideshow, .still-pictures {
+    width: 45%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/*----------------scroll ends ends------------------------*/
+
+
 section {
     background: #fff;
-    margin: 1rem 2rem;
-    padding: 1rem 2rem;
+    margin: 1rem 1rem; /* Reduce the margin for section to move closer to the page edges */
+    padding: 0.5rem 1rem; /* Reduce padding to bring content closer to the margins */
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 section::after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+#mission .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 1rem; /* Add padding inside the container to move content toward the margins */
+}
+#admission .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 1rem; /* Add padding inside the container to move content toward the margins */
+}
+#academics .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 1rem; /* Add padding inside the container to move content toward the margins */
+}
+
+/* Styling the image */
+#mission .container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 15px; /* Reduce margin to bring the image and text closer */
+}
+#admission .container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 15px; /* Reduce margin to bring the image and text closer */
+}
+#academics .container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 15px; /* Reduce margin to bring the image and text closer */
+}
+
+/* Styling the text next to the image */
+#mission .text-right {
+    max-width: 600px;
+    text-align: justify; /* Justify text alignment on larger screens */
+    margin-left: 5px; /* Add a small left margin to prevent text from being too close to the image */
+}
+#admission .text-right {
+    max-width: 600px;
+    text-align: justify; /* Justify text alignment on larger screens */
+    margin-left: 5px; /* Add a small left margin to prevent text from being too close to the image */
+}
+#academics .text-right {
+    max-width: 600px;
+    text-align: justify; /* Justify text alignment on larger screens */
+    margin-left: 5px; /* Add a small left margin to prevent text from being too close to the image */
+}
+
+
+
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    section {
+        margin: 1rem; /* Reduce margin for small screens */
+        padding: 0.5rem; /* Reduce padding for small screens */
+    }
+
+    #mission .container {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: left; /* Align text to the left to avoid huge gaps */
+        padding: 0; /* Remove padding to allow content closer to margins */
+    }
+    #admission .container {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: left; /* Align text to the left to avoid huge gaps */
+        padding: 0; /* Remove padding to allow content closer to margins */
+    }
+    #academics .container {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: left; /* Align text to the left to avoid huge gaps */
+        padding: 0; /* Remove padding to allow content closer to margins */
+    }
+
+    #mission .container img {
+        margin-right: 0; /* Remove margin on mobile */
+        margin-bottom: 10px; /* Add space below the image */
+        width: 100%; /* Ensure the image takes full width */
+        max-width: 100%; /* Prevent overflow */
+    }
+    #admission .container img {
+        margin-right: 0; /* Remove margin on mobile */
+        margin-bottom: 10px; /* Add space below the image */
+        width: 100%; /* Ensure the image takes full width */
+        max-width: 100%; /* Prevent overflow */
+    }
+    #academics .container img {
+        margin-right: 0; /* Remove margin on mobile */
+        margin-bottom: 10px; /* Add space below the image */
+        width: 100%; /* Ensure the image takes full width */
+        max-width: 100%; /* Prevent overflow */
+    }
+
+    #mission .text-right {
+        max-width: 100%; /* Let the text take full width */
+        text-align: left; /* Align the text to the left on mobile screens */
+        margin-left: 0; /* Remove margin to bring text closer to the image */
+        margin-right: 0; /* Align content closer to mobile screen edges */
+    }
+    #admission .text-right {
+        max-width: 100%; /* Let the text take full width */
+        text-align: left; /* Align the text to the left on mobile screens */
+        margin-left: 0; /* Remove margin to bring text closer to the image */
+        margin-right: 0; /* Align content closer to mobile screen edges */
+    }
+    #academics .text-right {
+        max-width: 100%; /* Let the text take full width */
+        text-align: left; /* Align the text to the left on mobile screens */
+        margin-left: 0; /* Remove margin to bring text closer to the image */
+        margin-right: 0; /* Align content closer to mobile screen edges */
+    }
+}

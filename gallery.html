@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Gallery</title>
+<link rel="icon" href="pics/kin-dmn.jpg" type="pics/x-icon">
 <link rel="stylesheet" href="style.css" >
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -91,45 +93,8 @@ img {vertical-align: middle;}
             <div class="logo"> <img src="pics/kin-dmn.jpg" alt=""> </div>
                 <ul class="main-menu">
                     
-                  <li><a href="index.html">Back to Home</a></li>
-                    <style>
-                        
-
-                       
-                        .main-menu{
-                          float: right;
-                          display: flex;
-    
-                        }
-                        li a {
-                          text-decoration: none;
-                        }
-                        ul{
-                          list-style-type: none;
-                        }
-
-
-
-                        li{
-                            box-shadow: 0 0 5px limegreen,
-                            0 0 25px limegreen;
-                        }
-
-                        li:hover{
-                            box-shadow: 0 0 5px limegreen,
-                            0 0 25px limegreen, 
-                            0 0 50px limegreen,
-                            0 0 100px limegreen,
-                            0 0 200px limegreen;
-                        }
-                        li{
-                            margin-right: 30px;
-                        }
-                        
-                        
-                    </style>
-        
-                </ul>
+                 
+                   
             
         </div>
     </div>
@@ -239,19 +204,19 @@ img {vertical-align: middle;}
    
   <img src="pics/Ronny.jpeg" alt="" width="450" height="400">
   
-  <p><strong>Sir Ronny:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis accusantium perspiciatis quaerat autem sint. Nulla cum ex placeat, aperiam recusandae, vel voluptatum accusantium et delectus, velit nesciunt. Excepturi, delectus?</p>
+  <p><strong>Sir Ronny:</strong></p>
 </div>
 <div>
    
   <img src="gallery/five.jpg" alt="" width="450" height="400">
   
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis accusantium perspiciatis quaerat autem sint. Nulla cum ex placeat, aperiam recusandae, vel voluptatum accusantium et delectus, velit nesciunt. Excepturi, delectus?</p>
+  <p></p>
 </div>
 <div>
    
   <img src="slidepics/jilo.jpg" alt="" width="450" height="400">
   
-  <p><strong>Sir Ben:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis accusantium perspiciatis quaerat autem sint. Nulla cum ex placeat, aperiam recusandae, vel voluptatum accusantium et delectus, velit nesciunt. Excepturi, delectus?</p>
+  <p><strong>Sir Ben:</strong></p>
 </div>
 
 <style>
@@ -269,59 +234,12 @@ img {vertical-align: middle;}
 </section>
 
 
-<div class="width-100 margin-top-50 footer">
-  <div class="container">
-      <div class="width-25">
-          <h2 class="quicklink-heading">Quick Links</h2>
-          <ul class="quicklink-menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
-
-          </ul>
-
-</div>
 
 
-<div class="width-25">
-  <h2 class="quicklink-heading">Student Section </h2>
-  <ul class="quicklink-menu">
-      <li><a href="#">Result</a></li>
-      <li><a href="#">Payment</a></li>
-      <li><a href="#">Training</a></li>
-      <li><a href="#">Extra Curricular Activity</a></li>
-
-  </ul>
-
-</div>
 
 
-<div class="width-25">
-  <h2 class="quicklink-heading">Info. Links </h2>
-  <ul class="quicklink-menu">
-      <li><a href="#">News</a></li>
-      <li><a href="#">Policy</a></li>
-      <li><a href="#">Admission</a></li>
-      <li><a href="#">Code and Ethics</a></li>
 
-  </ul>
 
-</div>
-
-<div class="width-25">
-  <h2 class="quicklink-heading">Get In Touch </h2>
-  <ul class="get-in-touch">
-      <li><i class="fa fa-envelope"></i><a href="#" class="footer-email">kingdavidmontessori@gmail.com</a></li>
-      <li><i class="fa fa-whatsapp"></i> 0245398964 / 0244871362</li>
-      <li><i class="fa fa-phone"></i> 0245398964 / 0244871362</li>
-      <li><i class="fa fa-facebook-official"></i> Kingdavid Montessori</li>
-
-  </ul>
-  
-  
-
-</div>
 
 </div>
 </div>
@@ -351,6 +269,103 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 </script>
+
+<style>
+    @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, adjust text size */
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 12px;
+  }
+
+  .main-menu {
+    flex-direction: column; /* Stack menu items on smaller screens */
+  }
+
+  .header-menu {
+    text-align: center;
+  }
+
+  li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* Styles for the main menu */
+.main-menu {
+  float: right;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  box-shadow: 0 0 5px limegreen, 0 0 25px limegreen;
+}
+
+li:hover {
+  box-shadow: 0 0 5px limegreen, 0 0 25px limegreen, 0 0 50px limegreen, 0 0 100px limegreen, 0 0 200px limegreen;
+}
+
+li {
+  margin-right: 30px;
+}
+
+/* Responsive container for images and text */
+#container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  align-items: center;
+}
+
+#container img {
+  margin-right: 20px;
+  max-width: 100%; /* Responsive images */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+p {
+  max-width: 100%;
+  margin: 20px 0; /* Adjust spacing */
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    flex-direction: column; /* Stack images and text on smaller screens */
+  }
+
+  #container img {
+    margin: 0 0 20px 0; /* Adjust margins for stacked layout */
+  }
+
+  p {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+</style>
+
 
 </body>
 </html> 
